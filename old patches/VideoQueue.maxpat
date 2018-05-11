@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 249.0, 79.0, 658.0, 687.0 ],
+		"rect" : [ 587.0, 79.0, 582.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,55 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 23.0, 491.5, 141.0, 105.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 313.0, 654.0, 63.0, 22.0 ],
+					"style" : "",
+					"text" : "send feed"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 313.0, 610.0, 70.0, 22.0 ],
+					"style" : "",
+					"text" : "set 0, bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 313.0, 571.0, 70.0, 22.0 ],
+					"style" : "",
+					"text" : "set 1, bang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -46,17 +95,6 @@
 					"patching_rect" : [ 22.0, 63.000031, 306.0, 22.0 ],
 					"style" : "",
 					"text" : "\"Macintosh HD:/Users/Maddie/GitHub/II_Project_Final/\""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-137",
-					"maxclass" : "jit.pwindow",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 23.0, 487.5, 160.0, 120.0 ]
 				}
 
 			}
@@ -158,7 +196,7 @@
 					"outlettype" : [ "int", "", "", "int" ],
 					"patching_rect" : [ 254.0, 139.0, 71.0, 22.0 ],
 					"style" : "",
-					"text" : "counter 0 1"
+					"text" : "counter 0 7"
 				}
 
 			}
@@ -246,7 +284,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-67",
-					"items" : [ "Capsense.mov", ",", "Ultimaker.mov" ],
+					"items" : [ "Bookmark.mov", ",", "Capsense.mov", ",", "Form2.mov", ",", "FusionReactor.mov", ",", "MadeInBrooklyn.mov", ",", "Ultimaker.mov", ",", "Universal.mov", ",", "Wearables.mov" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -308,7 +346,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 275.0, 541.0, 150.0, 33.0 ],
+					"patching_rect" : [ 318.5, 541.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "send playing video to ProjectionDisplay"
 				}
@@ -321,7 +359,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 265.5, 497.5, 169.0, 33.0 ],
+					"patching_rect" : [ 304.5, 496.5, 169.0, 33.0 ],
 					"style" : "",
 					"text" : "only send still image of first frame of video (default)"
 				}
@@ -346,9 +384,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 197.0, 546.5, 69.0, 22.0 ],
+					"patching_rect" : [ 201.0, 552.0, 102.0, 22.0 ],
 					"style" : "",
-					"text" : "send video"
+					"text" : "send video, bang"
 				}
 
 			}
@@ -359,9 +397,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 201.0, 502.0, 57.0, 22.0 ],
+					"patching_rect" : [ 201.0, 502.0, 91.0, 22.0 ],
 					"style" : "",
-					"text" : "send still"
+					"text" : "send still, bang"
 				}
 
 			}
@@ -384,7 +422,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 25.5, 624.5, 51.0, 22.0 ],
+					"patching_rect" : [ 23.0, 646.5, 51.0, 22.0 ],
 					"style" : "",
 					"text" : "forward"
 				}
@@ -524,7 +562,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 23.0, 457.0, 174.0, 22.0 ],
+					"patching_rect" : [ 23.0, 437.0, 174.0, 22.0 ],
 					"style" : "newobjYellow-1",
 					"text" : "jit.movie 640 480 @autostart 0"
 				}
@@ -552,9 +590,25 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 210.5, 528.0, 183.0, 528.0, 183.0, 621.0, 35.0, 621.0 ],
+					"destination" : [ "obj-6", 0 ],
+					"order" : 0,
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"midpoints" : [ 210.5, 528.0, 183.0, 528.0, 183.0, 621.0, 32.5, 621.0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -631,8 +685,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"order" : 0,
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 206.5, 621.0, 35.0, 621.0 ],
+					"midpoints" : [ 210.5, 621.0, 32.5, 621.0 ],
+					"order" : 1,
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -640,7 +703,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-13", 0 ],
-					"midpoints" : [ 291.0, 324.0, 150.0, 324.0, 150.0, 477.0, 186.0, 477.0, 186.0, 537.0, 206.5, 537.0 ],
+					"midpoints" : [ 291.0, 324.0, 150.0, 324.0, 150.0, 477.0, 186.0, 477.0, 186.0, 537.0, 210.5, 537.0 ],
 					"source" : [ "obj-130", 1 ]
 				}
 
@@ -776,7 +839,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-137", 0 ],
+					"destination" : [ "obj-17", 0 ],
 					"order" : 1,
 					"source" : [ "obj-50", 0 ]
 				}
@@ -785,9 +848,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-8", 0 ],
-					"midpoints" : [ 32.5, 480.0, 9.0, 480.0, 9.0, 618.0, 35.0, 618.0 ],
+					"midpoints" : [ 32.5, 480.0, 9.0, 480.0, 9.0, 618.0, 32.5, 618.0 ],
 					"order" : 0,
 					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"source" : [ "obj-6", 0 ]
 				}
 
 			}

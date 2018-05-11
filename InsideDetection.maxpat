@@ -38,6 +38,32 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 58.666664, 82.5, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 135.666656, 91.166656, 76.0, 22.0 ],
+					"style" : "",
+					"text" : "receive feed"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-73",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -70,7 +96,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 163.0, 559.0, 139.0, 22.0 ],
-					"presentation_rect" : [ 165.666656, 556.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.matrix 4 char 640 480"
 				}
@@ -852,7 +877,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.0, 46.0, 340.0, 60.0 ],
+					"patching_rect" : [ 20.166656, 14.166656, 340.0, 60.0 ],
 					"style" : "",
 					"text" : "Patch for inside detection:\n- read live input from Kinect at depth threshold\n- transform into blobs\n- when >1 blobs, project image with silhouette cut out"
 				}
@@ -948,6 +973,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"midpoints" : [ 68.166664, 105.0, 68.166664, 105.0 ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"midpoints" : [ 68.166664, 441.0, 68.166664, 441.0 ],
 					"source" : [ "obj-12", 0 ]
@@ -1009,6 +1042,14 @@
 					"destination" : [ "obj-24", 1 ],
 					"midpoints" : [ 202.166656, 462.0, 124.166664, 462.0 ],
 					"source" : [ "obj-15", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"midpoints" : [ 145.166656, 114.0, 120.0, 114.0, 120.0, 78.0, 68.166664, 78.0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -1147,7 +1188,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"midpoints" : [ 68.166664, 516.0, 36.0, 516.0, 36.0, 30.0, 424.666656, 30.0 ],
+					"midpoints" : [ 68.166664, 516.0, 45.0, 516.0, 45.0, 177.0, 246.0, 177.0, 246.0, 84.0, 402.0, 84.0, 402.0, 39.0, 424.666656, 39.0 ],
 					"order" : 2,
 					"source" : [ "obj-35", 0 ]
 				}
@@ -1400,6 +1441,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-32", 0 ],
+					"midpoints" : [ 328.166656, 702.0, 156.0, 702.0, 156.0, 696.0, 68.166664, 696.0 ],
 					"order" : 1,
 					"source" : [ "obj-78", 0 ]
 				}
