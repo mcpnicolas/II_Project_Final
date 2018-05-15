@@ -56,7 +56,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 544.25, 572.0, 86.0, 20.0 ],
-					"presentation_rect" : [ 542.0, 572.0, 0.0, 0.0 ],
 					"style" : "helpfile_label",
 					"text" : "mean values"
 				}
@@ -74,7 +73,6 @@
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 425.25, 609.0, 50.0, 23.0 ],
-					"presentation_rect" : [ 423.0, 609.0, 0.0, 0.0 ],
 					"style" : ""
 				}
 
@@ -89,7 +87,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "float", "float", "float", "float" ],
 					"patching_rect" : [ 425.25, 572.0, 113.0, 23.0 ],
-					"presentation_rect" : [ 423.0, 572.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "unpack 0. 0. 0. 0."
 				}
@@ -103,7 +100,6 @@
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 363.75, 572.0, 50.5, 22.0 ],
-					"presentation_rect" : [ 361.5, 572.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "jit.3m"
 				}
@@ -220,7 +216,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 252.5, 638.0, 127.0, 22.0 ],
 					"style" : "",
-					"text" : "if $f1 > 240 then bang"
+					"text" : "if $f1 > 255 then bang"
 				}
 
 			}
@@ -617,7 +613,7 @@
 					"outlettype" : [ "int", "", "", "int" ],
 					"patching_rect" : [ 1062.0, 142.5, 77.0, 22.0 ],
 					"style" : "",
-					"text" : "counter 0 10"
+					"text" : "counter 0 15"
 				}
 
 			}
@@ -705,7 +701,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-114",
-					"items" : [ "Arduino.mov", ",", "Bookmark.mov", ",", "CAIRN.mov", ",", "Capsense.mov", ",", "Form2.mov", ",", "FusionReactor.mov", ",", "MadeInBrooklyn.mov", ",", "MakerGlasses.mov", ",", "Ultimaker.mov", ",", "Universal.mov", ",", "Wearables.mov" ],
+					"items" : [ "Arduino.mov", ",", "Bookmark.mov", ",", "CAIRN.mov", ",", "Capsense.mov", ",", "Epilog.mov", ",", "Form2.mov", ",", "FusionReactor.mov", ",", "MadeInBrooklyn.mov", ",", "MakerGlasses.mov", ",", "Oscilloscope.mov", ",", "Othermill.mov", ",", "Soldering.mov", ",", "Ultimaker.mov", ",", "Universal.mov", ",", "VR.mov", ",", "Wearables.mov" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
